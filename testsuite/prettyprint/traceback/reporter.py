@@ -20,9 +20,9 @@ class TracebackPrettyPrinter(_WritelnDecorator):
 
     def writeln(self, arg=None):
         if arg and 'Traceback (most recent call last):' in arg and self.pretty_print_traceback:
-            super(TracebackPrettyPrinter, self).write(self._prettyprint_traceback(arg))
+            super(TracebackPrettyPrinter, self).writeln(self._prettyprint_traceback(arg))
         else:
-            super(TracebackPrettyPrinter, self).write(arg)
+            super(TracebackPrettyPrinter, self).writeln(arg)
 
     def _prettyprint_traceback(self, traceback):
         lexer = 'py3tb' if sys.version_info[0] == 3 else 'pytb'
