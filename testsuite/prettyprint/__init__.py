@@ -1,4 +1,1 @@
-from pkg_resources import declare_namespace
-
-declare_namespace('testsuite.prettyprint')
-
+__import__('pkg_resources').declare_namespace('testsuite.prettyprint')

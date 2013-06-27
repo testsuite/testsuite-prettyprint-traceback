@@ -13,7 +13,7 @@ if sys.platform == 'win32':
 
 setup(
     name='testsuite-prettyprint-traceback',
-    version='0.1.0-alpha.1',
+    version='0.1.0-alpha.2',
     packages=get_packages(),
     url='',
     license='BSD3',
